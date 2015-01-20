@@ -2,8 +2,6 @@ import urllib
 import urllib2
 import lxml.html
 import os
-import pdb
-from bs4 import BeautifulSoup
 
 def go(dom, main_url, type):
 	website_name = main_url.split('/')[2].split('.')[1]
