@@ -15,8 +15,6 @@ def go(dom, main_url, type):
 	for link in dom.xpath('//a/@href'):
 		if link.find("." + type) != -1:
 			link_list.append(link)
-		if link.find("defenders-2-podcast/transcript") != -1:
-			transcription_list.append(link)
 	print " >> Found " + str(len(link_list)) + " links with file type " + type
 	
 	# create / move to directories in current folder
